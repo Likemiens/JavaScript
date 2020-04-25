@@ -16,7 +16,7 @@ let firstQuestion = prompt("Введите обязательную статью
     secondQuestion = prompt("Во сколько обойдется?", ""),
     firstQuestionCopy = prompt("Введите обязательную статью расходов в этом месяце", ""),
     secondQuestionCopy = prompt("Во сколько обойдется?", "");
-
+ 
 appData.expenses.firstQuestion = secondQuestion;
 appData.expenses.firstQuestionCopy = secondQuestionCopy;
 

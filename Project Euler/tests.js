@@ -1,4 +1,6 @@
-'use strcit';
+'use strict';
+
+var lengthOfString = prompt("Введите длину строки", "");
 
 function divideNumbers(result) {
     var arr = +result,
@@ -10,13 +12,15 @@ function divideNumbers(result) {
             newArr.push(i);
         }
     }
-    
+
+    alert("Числа кратные 3 и 5");
+
     for (let i = 0; i < newArr.length; i++) {
-        console.log(newArr[i]);
+        alert(newArr[i]);
         sumArr = +newArr[i] + +sumArr;
     }
 
-    console.log(sumArr);
+    alert("Сумма чисел меньше " + lengthOfString + " кратных 3 и 5 равна: " + sumArr);
 }
 
-divideNumbers("1000");
+divideNumbers(lengthOfString);
